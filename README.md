@@ -1,16 +1,35 @@
-# Reading-Notes
-A text editor is a computer software program that allows you to create and edit files,
-text editors are available for different servers for various purposes and 
-there are a lot of text editor programs such as notepad++, Text Wrangler, Atom, Microsoft visual code …
-It’s up to the developer to use and chose whatever he/she wants from the variety of text editors. 
-The text editor has to be one of the most important tools you can use as an aspiring web developer.
-Text editor have many features that can help the developer in coding such as code completion; syntax highlighting also it has a great selection of extension will ensure that you have the ability to add and remove functionality as you want.
+![mind](https://www.ntaskmanager.com/wp-content/uploads/2019/05/fixed-vs-growth-mindset-blog-header-2.png)
 
 
-Linux, totally focus on the command line (Terminal) instead of the graphical user interface, A command line, or terminal, is a text-based interface to the system as You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text, using the terminal allows the developer to add, remove and delete files on the system.
-Terminals have a big advantage as we can have several command lines open and doing different tasks in each at the same time. We can also easily access on everything on the system.
-Terminals is full of shortcuts to help make the developer life easier Such as:
-Pwd …. Print working directory   / LS … list   / Cd… change directory   and a lot more 
-There are a lot of ways to open the terminals 
-There are 2 types of paths we can use, absolute and relative
-Everything is a file under Linux Even directories.
+# Growth Mindset
+
+*When people are improving their knowledge, intelligence and ability to learn new skills by hard work and insistence. They believe that learning doesn't stop the moment you leave work or studying.*
+
+
+**We have two types of mindset people:**
+
+
+
+|growth mindset|fixed mindset| 
+|--------------|--------------|
+|tend to achieve and learn more|believes their talents are innate gifts|
+
+
+
+*When someone has a growth mindset, they believe that they can continue to learn and become more intelligent with effort.  In contrast, someone who has a fixed mindset believes that they are born with a certain amount of talent and intelligence and that cannot be improved no matter how much they try and put efforts.*
+
+## ***Three reminders I can give myself for motivation and mind growth***
+
+* *Always to write my goals and working on it.*
+* *Always keep my motivation on the highest levels by doing and learning what I love.*
+* *Always trains myself to not be afraid from failure as I can do it again and again till I succeed.*
+
+
+For more information about Growth Mindset please vist this link
+
+[Growth Mindset](https://www.atlassian.com/blog/inside-atlassian/growth-mindset) 
+
+
+
+
+
