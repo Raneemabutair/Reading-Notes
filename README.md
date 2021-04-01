@@ -8,8 +8,10 @@ When using JavaScript, you can easily:
  * REACT TO EVENTS You can specify that a script should run when a specific event has occurred. For example, it could be run when: a button is pressed, information is added to a form.
 
  ***The first steps of starting a website project are:***
- |DEFINE THE GOAL|DESIGN THE SCRIPT|CODE EACH STEP|
- |---------------|-----------------|--------------|
+  * DEFINE THE GOAL 
+  * DESIGN THE SCRIPT 
+  * CODE EACH STEP 
+ 
  
 
 
