@@ -1,39 +1,48 @@
-# Jon Duckett, Html & CSS design and build websites
+# Jon Duckett JAVASCRIPT & JQUERY
+## Intro & Scripts
+JavaScript is a programming Language for the Web that can update and change both HTML and CSS by calculate, manipulate and validate data and make web pages more interactive.
+When using JavaScript, you can easily:
+ * ACCESS CONTENT   you can use JavaScript to select any element, attribute, or text from an HTML page. For example: Select any elements that have a class attribute with a value of note.
+ * MODIFY CONTENT you can use JavaScript to add elements, attributes, and text to the page, or remove them. For example: change the value of class attributes to trigger new CSS rules for those elements.
+ * PROGRAM RULES you can specify a set of steps for the browser to follow which allows it to access or change the content of a page. For example: a mortgage calculator could collect values from a form, perform a ca loculation, and display repayments.
+ * REACT TO EVENTS You can specify that a script should run when a specific event has occurred. For example, it could be run when: a button is pressed, information is added to a form.
 
-## Chap.1 Structure
-*HTML language is Hypertext Markup Language that have a set of markup symbols or 
-codes that we use it on the shape of tags on the HTML pages to create websites,
-html pages are text documents which have codes are often referred to as elements,
-html tags come in pairs whish start with < as a beginning and /> as an end,
-opening tags can carry attributes, which tell us more about the content of that element and all 
-attributes require a name and a value.
-To learn HTML, we need to learn the tags and where they can go.*
-## Chap.8 Extra Markup
-### **Doctypes**
-*Because there have been several versions of HTML, each web page should begin with a doctypes declaration to tell a browser which version of HTML the page is using. The use of a doctypes can also help the browser to render a page correctly.*
-### **Comments in HTML**
-*comments are not visible to users in the main browser window, they can be viewed by anyone who looks at the source code behind the page, when you write your comments it will be easier to understand from your side and if someone else needs to look at the code.*
-### **Id Attribute**
-*The id attribute specifies a unique id for an HTML element. The id attribute is used to point to a specific style declaration in a style sheet, It is used by CSS and JavaScript to perform a certain task for a unique element.*
-### **DIV** 
+ ***The first steps of starting a website project are:***
+ |DEFINE THE GOAL|DESIGN THE SCRIPT|CODE EACH STEP|
+ |---------------|-----------------|--------------|
+ 
 
-*The div element allows you to group a set of elements together in one block-level box. It can also make it easier to follow your code if you have used div elements to hold each section of the page.*
 
-## Chap.17 HTML5 Layout
-*The new HTML5 elements indicate the purpose of different parts of a web page and help to describe its structure, to make HTML5 elements work in Internet Explorer 8 (and older versions of IE), extra JavaScript is needed, which is available free from Google.*
-### **Headers & Footers**
-*The main header or footer that appears at the top or bottom of every page on the site.
-the header element used to contain the site name and the main navigation. The footer element contains copyright information.*
+ 
+ ***what is a Script?*** *A script is a series of instructions that the computer can follow in order to achieve a goal, to approach writing a script, break down your goal into a series of tasks and then work out each step needed to complete that task*
 
-### **Articles**
-*The article element acts as a container for any section of a page that could stand alone and potentially be syndicated.*
-### **Sections**
-*A structural HTML element used to group together related elements. Each section typically includes one or more heading elements and additional elements presenting related content.*
-### **Figures**
-*Usually, a figure is an image, illustration, diagram, code snippet, Videos etc., that is referenced in the main flow of a document.*
-### **Linking Around**
-*This allows you to turn an entire block into a link.*
-## Chap.18 Process & Design
-*When decide to build your website you need to understand the target audience why will the cist you website and are they likely to return because of this you need to study about this before you start to design your site and after that you need organize all the information that you need to go on every page of you site, then you have to wireframe your site pages and then start to design and You can use grouping and similarity to help simplify the information you present.*
+ ## Expressions + Operators
+ **Expression evaluates into (results in) a single value, there are two types of Expression:**
+  * EXPRESSIONS THAT JUST ASSIGN A VALUE TO A VARIABLE.
+*It means that all the variable need to be given a value like:
+Var name = “Raneem”; which is mean that the value of name now is raneem.*
+* EXPRESSIONS THAT USE TWO OR MORE VALUES TO RETURN A SINGLE VALUE.
+*You can perform operations on any number of individual values to determine a single value like: 
+Var account = 5*2;”; which is mean that the value of account now is 10* 
+
+**Operators they allow programmers to create a single value from one or more values there are two types of Operators:**
+
+* ARITHMETI C OPERATORS arithmetic operators perform arithmetic on numbers and contains the following mathematical operators such as: *Addition, Subtraction, Multiplication, Division and a lot more*
+* STRING OPERATOR when you may need to join two or more strings to create a single value for example: 
+*var firstName = ‘Raneem ‘; 
+var lastName = ' Abutair’; 
+var ful l Name = f irstName + l astName;*
+
+
+## Functions
+A JavaScript function is a block of code designed to perform a particular task,
+javascript a function allows you to define a block of code, give it a name and then execute it as many times as you want.
+
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+
+Function names can contain letters, digits, underscores, and dollar signs.
+
+
+
 
 
