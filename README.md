@@ -1,48 +1,31 @@
 # Jon Duckett JAVASCRIPT & JQUERY
+## Introducing CSS
 
-## Comparison and logical operators
+***CSS*** *stands for Cascading Style Sheets, CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.*
 
-**Operators are the constructs that can manipulate the values of the operands, and we some types of Operators such as:**
+*We have Different types of selectors allow you to target your rules at different elements.
+CSS rules usually appear in a separate document, although they may appear within an HTML page.*
 
-* **Comparison Operators,** *which allow you to evaluate a statement by comparing one value in the script with the result that you are expect and the result will be always two choices ether (Yes or No) (Boolean), the operator includes:*
+*We can write Css in many ways :*
 
-   |==|===|!==|<|>|<=|>=|!=|
-   |--|---|---|-|-|--|--|--|
-   |Equal to|Strict equal to (both of the data type and value are the same)|Strict not equal to (both of the data type and value are the not same)|Less than|Greater than|Less than or equal to|Greater than or equal to|Not equal to|
+  *	Inline - by using the style attribute inside HTML elements.
+  * Internal - by using a style element in the head section.
+   * 	External - by using a <link> element to link to an external CSS file.
 
-* **Logical Operators,** *a logical operator Logical operators are used to determine the logic between variables or values as many times as you want,*
+   ## Color
 
-  * **&& (logical And)** ex:
-   ((2<5) && (1>=2)) 
-*The result will be False Because we have T & F* 
-  * **||  (logical Or)** ex:
-  *((2<5) || (2<1))
-The result will be True Because we have T & T*
-  * **! (logical Not)** ex:
-  *!(2>1)
-The result will be False Because the result is True*
+   **Color can really bring your pages to life.** 
 
+*The color property allows you to specify the color of text inside an element. You can specify any color in CSS in one of three ways:*
 
-## **Loops**
-It’s a code block that will keep running as long as the returns are true, we have three types of loops:
+* 	RGB values which stand for ( red, green,blue)
 
-1.	**(For) Loop** if you want to run your codes a specific number of times.
-2.	**(While) Loop** if you don’t know how many times the code should run.
-3.	**(Do While) Loop** it’s the same as the while loop with one difference that it will always run the statement inside the curly braces at least once even if the condition is false. 
+ * HEX codes These are six-digit codes that represent the amount of red, green and blue in a color, preceded by a pound or hash #
 
-***Example (FOR LOOP)***
+ * color names.
 
+ 
+It is important to ensure that there is enough contrast between any text and the background color (otherwise people will not be able to read your content).
 
-           *Instead of writing:*
-     text += cars[0] + "<sf>";
-     text += cars[1] + "<sf>";
-     text += cars[2] + "<sf>";
-     text += cars[3] + "<sf>";
-         
-         
-         *you can write* 
-         var i;
-         for (i = 0; i < cars.length; i++) {
-         text += cars[i] + "<sf>";
 
 
