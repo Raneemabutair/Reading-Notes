@@ -1,76 +1,79 @@
-![mind](https://www.ntaskmanager.com/wp-content/uploads/2019/05/fixed-vs-growth-mindset-blog-header-2.png)
+# HTML Text, CSS Introduction, and Basic JavaScript Instructions
+
+## Text
+**The text is the contents of what presented on your pages, HTML contains several elements for defining text with a special meaning.
+HTML elements are used to describe the structure of the page (e.g., headings, subheadings, paragraphs). 
+They also provide semantic information (e.g., where emphasis should be placed, the definition of any acronyms used, when given text is a quotation).**
+## Elements:
+**Headings**
+HTML has six "levels" of headings.
+
+<img src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2Us8ouKzyDlMyiLBobl0t_CmtQ9Wr6bQ2g&usqp=CAU'>;
+
+**Paragraphs**
+
+To write pa Paragraphs on HTML we need to use this code
+```
+<p> Paragraph</p>
+```
+
+***And all other text formatting Tags***
+
+<img src= 'https://image.slidesharecdn.com/html2-150218221004-conversion-gate02/95/html2-1-638.jpg?cb=1424319044 '>;
 
 
-# Growth Mindset
+## Introducing CSS 
 
-*When people are improving their knowledge, intelligence and ability to learn new skills by hard work and insistence. They believe that learning doesn't stop the moment you leave work or studying.*
-
-
-**We have two types of mindset people:**
+**CSS stands for Cascading Style Sheets, CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.
+We have Different types of selectors allow you to target your rules at different elements. CSS rules usually appear in a separate document, although they may appear within an HTML page**
 
 
+We can write Css in many ways:
 
-|growth mindset|fixed mindset| 
-|--------------|--------------|
-|tend to achieve and learn more|believes their talents are innate gifts|
+•	Inline - by using the style attribute inside HTML elements.
 
+•	Internal - by using a style element in the head section.
 
-
-*When someone has a growth mindset, they believe that they can continue to learn and become more intelligent with effort.  In contrast, someone who has a fixed mindset believes that they are born with a certain amount of talent and intelligence and that cannot be improved no matter how much they try and put efforts.*
-
-## ***Three reminders I can give myself for motivation and mind growth***
-
-* *Always to write my goals and working on it.*
-* *Always keep my motivation on the highest levels by doing and learning what I love.*
-* *Always trains myself to not be afraid from failure as I can do it again and again till I succeed.*
+•	External - by using a element to link to an external CSS file
 
 
-For more information about Growth Mindset please vist this link
+## Basic JavaScript Instructions
 
-[Growth Mindset](https://www.atlassian.com/blog/inside-atlassian/growth-mindset) 
+JavaScript is a programming Language for the Web that can update and change both HTML and CSS by calculate, manipulate and validate data and make web pages more interactive. When using JavaScript, you can easily:
 
-
-
-
-
-*You can find down below Table of content that have some of my reading notes about different topics I took on my course till today, and I would like to share it with you.*
-
-# ***Reading Notes Code 102***
-
-|Assignment|Link|
-|----------|----|
-|Read01|[The Coder Computer](https://github.com/Raneemabutair/Reading-Notes/blob/main/201class-02.md)|
-|Read02a|[Learning Markdown](link)|
-|Read02b|[Revisions and Cloud](link)|
-|Read03|[Structure web pages with HTML](link)|
-|Read04|[Programming with JavaScript](link)|
-|Read05|[Operators and Loops](link)|
-|Read06|[Design web pages with CSS](link)|
+•	ACCESS CONTENT you can use JavaScript to select any element, attribute, or text from an HTML page. For example: Select any elements that have a class attribute with a value of note.
 
 
+•	MODIFY CONTENT you can use JavaScript to add elements, attributes, and text to the page, or remove them. For example: change the value of class attributes to trigger new CSS rules for those elements.
 
-# ***Reading Notes Code 201***
 
-|Assignment|Link|
-|----------|----|
-|Read01|[Introductory HTML and JavaScript]()|
-|Read02|[]()|
-|Read03|[]()|
-|Read04|[]()|
-|Read05|[]()|
-|Read06|[]()|
-|Read07|[]()|
-|Read08|[]()|
-|Read09|[]()|
-|Read10|[]()|
-|Read11|[]()|
-|Read12|[]()|
-|Read13|[]()|
-|Read14|[]()|
-|Read15|[]()|
+•	PROGRAM RULES you can specify a set of steps for the browser to follow which allows it to access or change the content of a page. For example: a mortgage calculator could collect values from a form, perform a ca loculation, and display repayments.
+
+
+•	REACT TO EVENTS You can specify that a script should run when a specific event has occurred. For example, it could be run when: a button is pressed, information is added to a form.
 
 
 
+<img src= 'https://modeling-languages.com/wp-content/uploads/2015/04/img_551d34ebec5c3.png  '>;
 
 
-[Vist my GitHub profile](https://github.com/Raneemabutair)
+## Loops
+
+It’s a code block that will keep running as long as the returns are true, we have three types of loops:
+1.	(For) Loop 
+2.	(While) Loop 
+3.	(Do While) Loop 
+
+Example (FOR LOOP)
+```
+          *Instead of writing:*
+ text += cars[0] + "<sf>";
+ text += cars[1] + "<sf>";
+ text += cars[2] + "<sf>";
+ text += cars[3] + "<sf>";
+     
+     
+     *you can write* 
+     var i;
+     for (i = 0; i < cars.length; i++) {
+     text += cars[i] + "<sf>";
