@@ -1,79 +1,156 @@
-# HTML Text, CSS Introduction, and Basic JavaScript Instructions
+# HTML Lists, CSS Boxes, JS Control Flow
 
-## Text
-**The text is the contents of what presented on your pages, HTML contains several elements for defining text with a special meaning.
-HTML elements are used to describe the structure of the page (e.g., headings, subheadings, paragraphs). 
-They also provide semantic information (e.g., where emphasis should be placed, the definition of any acronyms used, when given text is a quotation).**
-## Elements:
-**Headings**
-HTML has six "levels" of headings.
+## Lists
 
-<img src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb2Us8ouKzyDlMyiLBobl0t_CmtQ9Wr6bQ2g&usqp=CAU'>;
+**HTML provides us with three different types of lists:**
 
-**Paragraphs**
+• Ordered Lists
 
-To write pa Paragraphs on HTML we need to use this code
 ```
-<p> Paragraph</p>
+<ol>
+<li> potatoes </li>
+<li> water </li>
+<li> milk </li>
+</ol>
 ```
 
-***And all other text formatting Tags***
+```
+1. potatoes
+2. water
+3. milk
+```
 
-<img src= 'https://image.slidesharecdn.com/html2-150218221004-conversion-gate02/95/html2-1-638.jpg?cb=1424319044 '>;
+• Unordered list
+
+```
+<ul>
+<li> potatoes </li>
+<li> water </li>
+<li> milk </li>
+</ul>
+```
+
+```
+• potatoes
+• water
+• milk
+```
+
+• Definition List
+
+```
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+```
+```
+Coffee
+
+- black hot drink
+Milk
+- white cold drink
+```
+
+## Boxes
+
+**CSS treats each HTML element as if it has its own box as You can also control the borders, margin and padding for each box with CSS. there is something also name Block-level boxes can be made into inline boxes, and inline boxes made into block-level boxes.**
 
 
-## Introducing CSS 
+***Every box has three available properties that can be adjusted to control its appearance:***
 
-**CSS stands for Cascading Style Sheets, CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.
-We have Different types of selectors allow you to target your rules at different elements. CSS rules usually appear in a separate document, although they may appear within an HTML page**
+   * Border: The border separates the edge of one box from another.
 
+   * Margin: margins sit outside the edge of the border. You can set the width of a margin to create a gap between the borders of two adjacent boxes.
 
-We can write Css in many ways:
+   * Padding: padding is the space between the border of a box and any content contained within it. Adding padding can increase the readability of its contents.
 
-•	Inline - by using the style attribute inside HTML elements.
-
-•	Internal - by using a style element in the head section.
-
-•	External - by using a element to link to an external CSS file
+```
+a {
+ color: #000000;
+ text-transform: uppercase;
+ text-decoration: none;
+ padding: 6px 18px 5px 18px;}
+ a:hover, a.on {
+ color: #cc3333;
+ background-color: #ffffff;}
+ </style>
+</head>
+<body>
+ <div id="page">
+ <div id="logo">
+ <img src="images/logo.gif" alt="The Analog Specialists" />
+ </div>
+ <ul id="navigation">
+ <li><a href="#" class="on">Home</a></li>
+ <li><a href="#">For Sale</a></li>
+ <li><a href="#">Repairs</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ <p>
+ <img src="images/keys.jpg" alt="Fender Rhodes, Hohner Clavinet, 
+ and Wurlitzer EP200" />
+ </p>
+ <p>
+ We specialise in the sales and repair of classic keyboards, in particular 
+ the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+ </p>
+ </div>
+</body>
+</html>
+```
 
 
 ## Basic JavaScript Instructions
 
-JavaScript is a programming Language for the Web that can update and change both HTML and CSS by calculate, manipulate and validate data and make web pages more interactive. When using JavaScript, you can easily:
 
-•	ACCESS CONTENT you can use JavaScript to select any element, attribute, or text from an HTML page. For example: Select any elements that have a class attribute with a value of note.
-
-
-•	MODIFY CONTENT you can use JavaScript to add elements, attributes, and text to the page, or remove them. For example: change the value of class attributes to trigger new CSS rules for those elements.
+**STATEMENTS**
+A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a statement. Statements should end with a semicolon.
 
 
-•	PROGRAM RULES you can specify a set of steps for the browser to follow which allows it to access or change the content of a page. For example: a mortgage calculator could collect values from a form, perform a ca loculation, and display repayments.
+**COMMENTS**
+You should write comments to explain what your code does. They help make your code easier to read and understand.
 
+**VARIABLES**
+A script will have to temporarily store the bits of information it needs to do its job. It can store this data in variables.
 
-•	REACT TO EVENTS You can specify that a script should run when a specific event has occurred. For example, it could be run when: a button is pressed, information is added to a form.
+**DATA TYPES**
+ * NUMERIC DATA TYPE (1,2,3.5)
+*  STRING DATA TYPE “hello”
+ * BOOLEAN DATA TYPE (true or false)
 
+Expressions rely on operators to calculate a value.
 
+## Decisions and Loops
 
-<img src= 'https://modeling-languages.com/wp-content/uploads/2015/04/img_551d34ebec5c3.png  '>;
+**SWITCH STATEMENTS**
 
+A switch statement starts with a variable called the switch value. Each case indicates a possible value for this variable and the code that should run if the variable matches that value.
 
-## Loops
-
-It’s a code block that will keep running as long as the returns are true, we have three types of loops:
-1.	(For) Loop 
-2.	(While) Loop 
-3.	(Do While) Loop 
-
-Example (FOR LOOP)
 ```
-          *Instead of writing:*
- text += cars[0] + "<sf>";
- text += cars[1] + "<sf>";
- text += cars[2] + "<sf>";
- text += cars[3] + "<sf>";
-     
-     
-     *you can write* 
-     var i;
-     for (i = 0; i < cars.length; i++) {
-     text += cars[i] + "<sf>";
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+**Type of looping:**
+  *	for
+
+* while
+
+* do while
+
+**I explained a lot about in the loop in a previous reads please check them .**
+
+
+

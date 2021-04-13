@@ -72,14 +72,7 @@ Example (FOR LOOP)
  text += cars[2] + "<sf>";
  text += cars[3] + "<sf>";
      
-     
-     *you can write* 
+        *you can write* 
      var i;
      for (i = 0; i < cars.length; i++) {
      text += cars[i] + "<sf>";
-```
-
-
-
-
-
