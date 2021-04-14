@@ -1,199 +1,86 @@
-#  HTML Links, CSS Layout, JS Functions
 
-## Links
-**links are the defining feature of the web because they allow you to move from one web page to another.
-Linking to Other Sites 
-Links are created using the element which has an attribute called href. The value of the href attribute is the page that you want people to go to when they click on the link.**
-```
-<ul>
- <li><a href="http://www.empireonline.com">
- Empire</a></li>
-</ul>
-```
-Linking to Other Pages on the Same Site
-When you are linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a shorthand known as a relative URL.
-```
-<ul>
- <li><a href="index.html">Home</a></li>
-</ul>
-```
-Email Links
-mailto: this time the value of the href attribute starts with mailto: and is followed by the email address you want the email to be sent to.
-```
-<a href="mailto:jon@example.org">Email Jon</a>
-```
+# HTML Images; CSS Color & Text
 
+## Images 
 
+A picture can say a thousand words, and great images help make the difference between an average-looking site and a really engaging one.
 
-Opening Links in a New Window
-Target: If you want a link to open in a new window, you can use the target attribute on the opening tag. The value of this attribute should be _blank.
-```
-<a href="http://www.imdb.com" target="_blank">
-Internet Movie Database</a> (opens in new window)
-```
-Linking to a Specific Part of the Same Page
-Before you can link to a specific part of a page, you need to identify the points in the page that the link will go to.
-```
-<h1 id="top">Film-Making Terms</h1>
-<a href="#arc_shot">Arc Shot</a><br />
-<a href="#interlude">Interlude</a><br />
-<a href="#prologue">Prologue</a><br /><br />
-<h2 id="arc_shot">Arc Shot</h2>
-```
+  The <img> element is used to add images to a web page.
+   
+   ```
+<img  src="images/quokka.jpg" alt="A family of quokka”/>
+  ```
 
-Layout
-•	elements are often used as containing elements to group together sections of a page,
+you must always specify a src attribute to indicate the source of an image and an alt attribute to describe the content of an image.
+Photographs are best saved as JPEGs; illustrations or logos that use flat colors are better saved as GIFs.
+We can control our images by using a lot of codes such as :
 
-•	Browsers display pages in normal flow unless you specify relative, absolute, or fixed positioning.
-
-•	Pages can be fixed width or liquid (stretchy) layouts.
-
-•	The float property moves content to the left or right of the page and can be used to create multi-column layouts.
- (Floated items require a defined width.)
-
-•	Designers keep pages within 960-1000 pixels wide, and indicate what the site is about within the top 600 pixels (to demonstrate its relevance without scrolling).
-
-There are tons of different layout designs to choose from here some examples:
- 
-**This called Fix-width layout**
+•	Height & Width of Images:
 
 ```
-<body>
-<div id="header">
- <h1>Logo</h1>
- <div id="nav">
- <ul>
- <li><a href="">Home</a></li>
- <li><a href="">Products</a></li>
- <li><a href="">Services</a></li>
- <li><a href="">About</a></li>
- <li><a href="">Contact</a></li>
- </ul>
- </div>
-</div>
-<div id="content">
- <div id="feature">
- <p>Feature</p>
- </div>
- <div class="article column1">
- <p>Column One</p>
- </div>
- <div class="article column2">
- <p>Column Two</p>
- </div>
- <div class="article column3">
- <p>Column Three</p>
- </div>
-</div>
-<div id="footer">
- <p>&copy; Copyright 2011</p>
-</div>
-</body>
+<img src="images/quokka.jpg" alt="A family of 
+ quokka" width="600" height="450" />
 ```
-**This called liquid-layout:**
+
+•	Where to Place Images in Your Code:
 
 ```
-<body>
-<div id="header">
- <h1>Logo</h1>
- <div id="nav">
- <ul>
- <li><a href="">Home</a></li>
- <li><a href="">Products</a></li>
- <li><a href="">Services</a></li>
- <li><a href="">About</a></li>
- <li><a href="">Contact</a></li>
- </ul>
- </div>
-</div>
-<div id="content">
- <div id="feature">
- <p>Feature</p>
- </div>
- <div class="article column1">
- <p>Column One</p>
- </div>
- <div class="article column2">
- <p>Column Two</p>
- </div>
- <div class="article column3">
- <p>Column Three</p>
- </div>
-</div>
-<div id="footer">
- <p>&copy; Copyright 2011</p>
-</div>
-</body>
+<p><img src="images/bird.gif" alt="Bird" width="100" 
+height="100" />There are around 10,000 living 
+ species of birds that inhabit different 
+ ecosystems from the Arctic to the Antarctic</p>
+```
+
+•	Aligning Images Horizontally or Vertically
+
+```
+Align =” left”
+Align =” right”
+Align =” up”
+Align =” bottom”
+Align=”middle”
 ```
 
 
 
-## Functions, Methods, and Objects
+**Three Rules for Creating Images**
 
-**Functions let you group a series of statements together to perform a specific task.**
+  * save images in the right format
 
-**A BASIC FUNCTION**
-```
-var msg = 'Sign up to receive our newsletter for 10% off!'; 
-function updateMessage() { 
-var el = document.getElementByld('message'}; 
-el .textContent = msg; 
-} 
-updateMessage(};
-```
+  * save images at the right size
+  
+  * se the correct resolution
 
 
+## Color
+
+Color can really bring your pages to life.The color property allows you to specify the color of text inside an element. You can specify any color in CSS in one of three ways: 
+
+•	**RGB**  values These express colors in terms of how much red, green and blue are used to make it up. For example: rgb(100,100,90)
+
+•	**HEX**  codes These are six-digit codes that represent the amount of red, green and blue in a color, preceded by a pound or hash # sign. For example: #ee3e80 
+
+•	**Color names** There are 147 predefined color names that are recognized by browsers. For example: DarkCyan
 
 
 
-**Declaring a Function**
-
- ```
-function Usename() 
-{document.write('Ahmad');}
-
-```
-**Call the function** 
-```
-Username();
-
-```
-
-**Declaring functions that need information**:
-
-```
-function getArea(width,height) {return width*height;}
-```
-
-**Getting a single value out of a function**
-
-```
-function calculationArea(width,height){
-var area= width* height;
-return area;
-} 
-var wallOne = calculationArea(3,5); 
-var wallTwo=calculationArea(8,5);
-
-```
-
-## 6 Reasons for Pair Programming
+**It is important to ensure that there is enough contrast between any text and the background color (otherwise people will not be able to read your content)**
 
 
-there are four fundamental skills that help anyone learn a new language:
+## Text
 
-  * Listening: hearing and interpreting the vocabulary 
-  *  Speaking: using the correct words to communicate an idea 
-  * Reading: understanding what written language intends to convey 
-  * Writing: producing from scratch a meaningful
+  * There are properties to control the choice of font, size, weight, style, and spacing.
 
-**As a developer you need to focus on :**
-1. Greater efficiency
- 2. Engaged collaboration
-3. Learning from fellow students
-4. Social skills
-5. Job interview readiness
-6. Work environment readiness
+  * if you want to use a wider range of typefaces there are several options, but you need to have the right license to use them.
+
+  * You can use pseudo-classes to change the style of an element when a user hovers over or clicks on text, or when they have visited a link.
 
 
+## JPEG vs PNG vs GIF
+
+  * JPEG images don’t support transparency and are hence not usable for such cases.
+
+  * PNG images support transparency in two ways — inserting an alpha channel that allows partial transparency or by declaring a single colour as transparent (index transparency).
+
+  * GIF images support transparency by declaring a single colour in the colour palette as transparent (index transparency).
 
