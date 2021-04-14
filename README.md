@@ -1,156 +1,199 @@
-# HTML Lists, CSS Boxes, JS Control Flow
+#  HTML Links, CSS Layout, JS Functions
 
-## Lists
-
-**HTML provides us with three different types of lists:**
-
-• Ordered Lists
-
-```
-<ol>
-<li> potatoes </li>
-<li> water </li>
-<li> milk </li>
-</ol>
-```
-
-```
-1. potatoes
-2. water
-3. milk
-```
-
-• Unordered list
-
+## Links
+**links are the defining feature of the web because they allow you to move from one web page to another.
+Linking to Other Sites 
+Links are created using the element which has an attribute called href. The value of the href attribute is the page that you want people to go to when they click on the link.**
 ```
 <ul>
-<li> potatoes </li>
-<li> water </li>
-<li> milk </li>
+ <li><a href="http://www.empireonline.com">
+ Empire</a></li>
 </ul>
 ```
-
+Linking to Other Pages on the Same Site
+When you are linking to other pages within the same site, you do not need to specify the domain name in the URL. You can use a shorthand known as a relative URL.
 ```
-• potatoes
-• water
-• milk
+<ul>
+ <li><a href="index.html">Home</a></li>
+</ul>
 ```
-
-• Definition List
-
+Email Links
+mailto: this time the value of the href attribute starts with mailto: and is followed by the email address you want the email to be sent to.
 ```
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
-```
-```
-Coffee
-
-- black hot drink
-Milk
-- white cold drink
+<a href="mailto:jon@example.org">Email Jon</a>
 ```
 
-## Boxes
-
-**CSS treats each HTML element as if it has its own box as You can also control the borders, margin and padding for each box with CSS. there is something also name Block-level boxes can be made into inline boxes, and inline boxes made into block-level boxes.**
 
 
-***Every box has three available properties that can be adjusted to control its appearance:***
+Opening Links in a New Window
+Target: If you want a link to open in a new window, you can use the target attribute on the opening tag. The value of this attribute should be _blank.
+```
+<a href="http://www.imdb.com" target="_blank">
+Internet Movie Database</a> (opens in new window)
+```
+Linking to a Specific Part of the Same Page
+Before you can link to a specific part of a page, you need to identify the points in the page that the link will go to.
+```
+<h1 id="top">Film-Making Terms</h1>
+<a href="#arc_shot">Arc Shot</a><br />
+<a href="#interlude">Interlude</a><br />
+<a href="#prologue">Prologue</a><br /><br />
+<h2 id="arc_shot">Arc Shot</h2>
+```
 
-   * Border: The border separates the edge of one box from another.
+Layout
+•	elements are often used as containing elements to group together sections of a page,
 
-   * Margin: margins sit outside the edge of the border. You can set the width of a margin to create a gap between the borders of two adjacent boxes.
+•	Browsers display pages in normal flow unless you specify relative, absolute, or fixed positioning.
 
-   * Padding: padding is the space between the border of a box and any content contained within it. Adding padding can increase the readability of its contents.
+•	Pages can be fixed width or liquid (stretchy) layouts.
+
+•	The float property moves content to the left or right of the page and can be used to create multi-column layouts.
+ (Floated items require a defined width.)
+
+•	Designers keep pages within 960-1000 pixels wide, and indicate what the site is about within the top 600 pixels (to demonstrate its relevance without scrolling).
+
+There are tons of different layout designs to choose from here some examples:
+ 
+**This called Fix-width layout**
 
 ```
-a {
- color: #000000;
- text-transform: uppercase;
- text-decoration: none;
- padding: 6px 18px 5px 18px;}
- a:hover, a.on {
- color: #cc3333;
- background-color: #ffffff;}
- </style>
-</head>
 <body>
- <div id="page">
- <div id="logo">
- <img src="images/logo.gif" alt="The Analog Specialists" />
- </div>
- <ul id="navigation">
- <li><a href="#" class="on">Home</a></li>
- <li><a href="#">For Sale</a></li>
- <li><a href="#">Repairs</a></li>
- <li><a href="#">About</a></li>
- <li><a href="#">Contact</a></li>
+<div id="header">
+ <h1>Logo</h1>
+ <div id="nav">
+ <ul>
+ <li><a href="">Home</a></li>
+ <li><a href="">Products</a></li>
+ <li><a href="">Services</a></li>
+ <li><a href="">About</a></li>
+ <li><a href="">Contact</a></li>
  </ul>
- <p>
- <img src="images/keys.jpg" alt="Fender Rhodes, Hohner Clavinet, 
- and Wurlitzer EP200" />
- </p>
- <p>
- We specialise in the sales and repair of classic keyboards, in particular 
- the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
- </p>
  </div>
+</div>
+<div id="content">
+ <div id="feature">
+ <p>Feature</p>
+ </div>
+ <div class="article column1">
+ <p>Column One</p>
+ </div>
+ <div class="article column2">
+ <p>Column Two</p>
+ </div>
+ <div class="article column3">
+ <p>Column Three</p>
+ </div>
+</div>
+<div id="footer">
+ <p>&copy; Copyright 2011</p>
+</div>
 </body>
-</html>
+```
+**This called liquid-layout:**
+
+```
+<body>
+<div id="header">
+ <h1>Logo</h1>
+ <div id="nav">
+ <ul>
+ <li><a href="">Home</a></li>
+ <li><a href="">Products</a></li>
+ <li><a href="">Services</a></li>
+ <li><a href="">About</a></li>
+ <li><a href="">Contact</a></li>
+ </ul>
+ </div>
+</div>
+<div id="content">
+ <div id="feature">
+ <p>Feature</p>
+ </div>
+ <div class="article column1">
+ <p>Column One</p>
+ </div>
+ <div class="article column2">
+ <p>Column Two</p>
+ </div>
+ <div class="article column3">
+ <p>Column Three</p>
+ </div>
+</div>
+<div id="footer">
+ <p>&copy; Copyright 2011</p>
+</div>
+</body>
 ```
 
 
-## Basic JavaScript Instructions
 
+## Functions, Methods, and Objects
 
-**STATEMENTS**
-A script is a series of instructions that a computer can follow one-by-one. Each individual instruction or step is known as a statement. Statements should end with a semicolon.
+**Functions let you group a series of statements together to perform a specific task.**
 
-
-**COMMENTS**
-You should write comments to explain what your code does. They help make your code easier to read and understand.
-
-**VARIABLES**
-A script will have to temporarily store the bits of information it needs to do its job. It can store this data in variables.
-
-**DATA TYPES**
- * NUMERIC DATA TYPE (1,2,3.5)
-*  STRING DATA TYPE “hello”
- * BOOLEAN DATA TYPE (true or false)
-
-Expressions rely on operators to calculate a value.
-
-## Decisions and Loops
-
-**SWITCH STATEMENTS**
-
-A switch statement starts with a variable called the switch value. Each case indicates a possible value for this variable and the code that should run if the variable matches that value.
-
+**A BASIC FUNCTION**
 ```
-switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
-}
+var msg = 'Sign up to receive our newsletter for 10% off!'; 
+function updateMessage() { 
+var el = document.getElementByld('message'}; 
+el .textContent = msg; 
+} 
+updateMessage(};
 ```
 
-**Type of looping:**
-  *	for
 
-* while
 
-* do while
 
-**I explained a lot about in the loop in a previous reads please check them .**
+
+**Declaring a Function**
+
+ ```
+function Usename() 
+{document.write('Ahmad');}
+
+```
+**Call the function** 
+```
+Username();
+
+```
+
+**Declaring functions that need information**:
+
+```
+function getArea(width,height) {return width*height;}
+```
+
+**Getting a single value out of a function**
+
+```
+function calculationArea(width,height){
+var area= width* height;
+return area;
+} 
+var wallOne = calculationArea(3,5); 
+var wallTwo=calculationArea(8,5);
+
+```
+
+## 6 Reasons for Pair Programming
+
+
+there are four fundamental skills that help anyone learn a new language:
+
+  * Listening: hearing and interpreting the vocabulary 
+  *  Speaking: using the correct words to communicate an idea 
+  * Reading: understanding what written language intends to convey 
+  * Writing: producing from scratch a meaningful
+
+**As a developer you need to focus on :**
+1. Greater efficiency
+ 2. Engaged collaboration
+3. Learning from fellow students
+4. Social skills
+5. Job interview readiness
+6. Work environment readiness
 
 
 
