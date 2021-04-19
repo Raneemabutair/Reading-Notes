@@ -1,86 +1,133 @@
+# Object-Oriented Programming, HTML Tables
 
-# HTML Images; CSS Color & Text
+## Domain modeling
+Domain modeling is the process of creating a conceptual model for a specific problem. And a domain model that's articulated well can verify and validate your understanding of that problem.
 
-## Images 
+1.	When modeling a single entity that'll have many instances, build self-contained objects with the same attributes and behaviors.
+2.	Model its attributes with a constructor function that defines and initializes properties.
+3.	Model its behaviors with small methods that focus on doing one job well.
+4.	Create instances using the new keyword followed by a call to a constructor function.
+5.	Store the newly created object in a variable so you can access its properties and methods from outside.
+6.	Use this variable within methods so you can access the object's properties and methods from inside
 
-A picture can say a thousand words, and great images help make the difference between an average-looking site and a really engaging one.
+## Tables
 
-  The <img> element is used to add images to a web page.
-   
-   ```
-<img  src="images/quokka.jpg" alt="A family of quokka”/>
-  ```
-
-you must always specify a src attribute to indicate the source of an image and an alt attribute to describe the content of an image.
-Photographs are best saved as JPEGs; illustrations or logos that use flat colors are better saved as GIFs.
-We can control our images by using a lot of codes such as :
-
-•	Height & Width of Images:
-
+A table represents information in a grid format.
+The ```<table>``` element is used to create a table. The contents of the table are written out row by row.
+You indicate the start of each row using the opening ```<trt>``` tag
+Each cell of a table is represented using ```<td>``` element.
 ```
-<img src="images/quokka.jpg" alt="A family of 
- quokka" width="600" height="450" />
-```
-
-•	Where to Place Images in Your Code:
-
-```
-<p><img src="images/bird.gif" alt="Bird" width="100" 
-height="100" />There are around 10,000 living 
- species of birds that inhabit different 
- ecosystems from the Arctic to the Antarctic</p>
-```
-
-•	Aligning Images Horizontally or Vertically
-
-```
-Align =” left”
-Align =” right”
-Align =” up”
-Align =” bottom”
-Align=”middle”
+<table>
+ <tr>
+ <td>15</td>
+ <td>15</td>
+ <td>30</td>
+ </tr>
+ <tr>
+ <td>45</td>
+ <td>60</td>
+ <td>45</td>
+ </tr>
+ <tr>
+ <td>60</td>
+ <td>90</td>
+ <td>90</td>
+ </tr>
+</table>
 ```
 
+The element ```<th>``` is used just like the```<td>```
+ element but its purpose is to represent the heading for either a column or a row. (The th stands for table heading.)
 
 
-**Three Rules for Creating Images**
+You can make cells of a table span more than one row or column using the rowspan and colspan attributes.
+For long tables you can split the table into a ```<thead>, ```
+```<tbody>```, and ```<tfoot>.```
 
-  * save images in the right format
+```
+<html>
+<head>
+ <title>Tables</title>
+</head>
+<body>
+ <table>
+ <thead>
+ <tr>
+ <th></th>
+ <th scope="col">Home starter hosting</th>
+ <th scope="col">Premium business hosting</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <th scope="row">Disk space</th>
+ <td>250mb</td>
+ <td>1gb</td>
+ </tr>
+ <tr>
+ <th scope="row">Bandwidth</th>
+ <td>5gb per month</td>
+ <td>50gb per month</td>
+ </tr>
+ <!-- more rows like the two above here -->
+ </tbody>
+ <tfoot>
+ <tr>
+ <td></td>
+ <td colspan="2">Sign up now and save 10%!</td>
+ </tr>
+ </tfoot>
+ </table>
+</body>
+</html>
+```
+## Functions, Methods, and Objects
 
-  * save images at the right size
-  
-  * se the correct resolution
+***Objects*** 
+
+JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. In addition to objects that are predefined in the browser, you can define your own objects. This chapter describes how to use objects, properties, functions, and methods, and how to create your own objects.
 
 
-## Color
+```
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+```
 
-Color can really bring your pages to life.The color property allows you to specify the color of text inside an element. You can specify any color in CSS in one of three ways: 
+***Functions*** 
+***
+Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
 
-•	**RGB**  values These express colors in terms of how much red, green and blue are used to make it up. For example: rgb(100,100,90)
-
-•	**HEX**  codes These are six-digit codes that represent the amount of red, green and blue in a color, preceded by a pound or hash # sign. For example: #ee3e80 
-
-•	**Color names** There are 147 predefined color names that are recognized by browsers. For example: DarkCyan
-
-
-
-**It is important to ensure that there is enough contrast between any text and the background color (otherwise people will not be able to read your content)**
-
-
-## Text
-
-  * There are properties to control the choice of font, size, weight, style, and spacing.
-
-  * if you want to use a wider range of typefaces there are several options, but you need to have the right license to use them.
-
-  * You can use pseudo-classes to change the style of an element when a user hovers over or clicks on text, or when they have visited a link.
+```
+function square(number) {
+  return number * number;
+}
+```
+Calling the function actually performs the specified actions with the indicated parameters. For example, if you define the function function name, you could call it as follows:
+```
+functionname ();
+```
 
 
-## JPEG vs PNG vs GIF
 
-  * JPEG images don’t support transparency and are hence not usable for such cases.
 
-  * PNG images support transparency in two ways — inserting an alpha channel that allows partial transparency or by declaring a single colour as transparent (index transparency).
+***Methods***
+JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition. Methods are functions stored as object properties.
+Adding New Methods
+Defining methods to an object is done inside the constructor function:
+```
+function person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName; 
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    };
+}
+```
 
-  * GIF images support transparency by declaring a single colour in the colour palette as transparent (index transparency).
+<img src="https://image.slidesharecdn.com/javascript-1193630506982978-3/95/javascript-17-728.jpg?cb=1193601707  ">
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCowqVvu2ootzAnBsBVXi-TeFZ9qtKgkRvz5rLEfkeU1agdPk2zfyTYoKpx6eFz3nzbI&usqp=CAU   ">
