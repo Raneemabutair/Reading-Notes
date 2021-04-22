@@ -1,109 +1,42 @@
-# **Forms and JS Events**
+#  **Error Handling & Debugging**
 
-## **Forms**
+ **ORDER OF EXECUTION**
 
-*Form Controls*,   There are several types of form controls that you can use to collect information from visitors to your site:
+The order in which statements are executed can be complex; some tasks cannot complete until another statement or function has been run
 
-  * ADDING TEXT
+*EXECUTION CONTEXTS*
 
-  * Making Choices
+Every statement in a script lives in one of three execution contexts:
 
-  * Submitting Forms
+  •	GLOBAL CONTEXT Code that is in the script, but not in a function. There is only   one global context in any page.
 
-  * Uploading Files
+  •	GLOBAL SCOPE If a variable is declared outside a function, it can be used anywhere because it has global scope. If you do not use the var keyword when creating a variable, it is placed in global scope. 
 
-  **How Forms Works**
+ •	FUNCTION CONTEXT Code that is being run within a function. Each function has its own function context. 
 
-  <img src ="https://media.geeksforgeeks.org/wp-content/uploads/20200107124202/flowChart-1-1024x682.png ">
+•	FUNCTION-LEVEL SCOPE When a variable is declared within a function, it can only be used within that function. This is because it has function-level scope.
 
+•	EVAL CONTEXT (NOT SHOWN) Text is executed like code in an internal function called eval.
 
-  **Form Structure**
-```
-<form action="http://www.example.com/subscribe.php" 
-method="get">
-<p>This is where the form controls will appear.
- </p>
-</form>
-```
+**The Stack**
 
-**We have a lot of form inputs types such as:**
-1.Text input 
+The JavaScript interpreter possesses one line of codes at a time 
+And when statement needs data from another function it STACKS the new function on top of the current task.
 
-2.Password input
+**UNDERSTANDING SCOPE**
 
-3.Text area
+Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global: Global variables are those declared outside of a block. Local variables are those declared inside of a block.
 
-4.Radio Button
+**ERROR OBJECTS**
 
-5.Checkbox
+It contains 2 properties:
 
-6.Drop Down List Box
+* message: the error description, a human readable message that should explain what error happened
 
-7.Multiple Select Box
-
-8.File Input Box
-
-9.Submit Button
-
-10.Image Button
-
-## **Lists, Tables & Forms**
-
-In addition to the CSS properties covered in other chapters which work with the contents of all elements, there are several others that are specifically used to control the appearance of lists, tables, and forms.
-
-* List markers can be given different appearances using the:
-
-    * list-style-type
-    * list-style-position
-    * list-style
+* name: the type of error occurred (assumes the value of the specific error object name, for example, TypeError or SyntaxError or Reference Error or 	URI Error..)
 
 
-**Table** cells can have different borders and spacing in different browsers, but there are properties you can use to control them and make them more consistent.
 
-**Some Tables Properties:**
-
-1.width to set the width of the table 
-
-2.padding to set the space between the border of each table cell and its content
-
- 3.text-transform to convert the content of the table headers to uppercase 
-
-4.letter-spacing, font-size to add additional styling to the content of the table headers 
-
-5.border-top, border-bottom to set borders above and below the table headers
-
- 6.text-align to align the writing to the left of some table cells and to the right of the others
- 
-7.background-color to change the background color of the alternating table rows 
-
-8.:hover to highlight a table row when a user's mouse goes over it.
+**We use the console to helps narrow down the area in which the error is located, so you can try to find the exact error. JavaScript has 7 different types of errors. Each creates its own error object, which can tell you it’s line number and gives a description of the error.**
 
 
-## **Events**
-
-JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window.
-
-
-**Here is a list of some common HTML events:**
-
-* onchange :	An HTML element has been changed
-* onclick	The user clicks an HTML element
-* onmouseover	The user moves the mouse over an HTML element
-
-* onmouseout	The user moves the mouse away from an HTML element
-* onkeydown	The user pushes a keyboard key
-
-* onload	The browser has finished loading the page
-
-  <img src ="https://www.eclipse.org/birt/img/documentation/integrating/overview.jpg  ">
-
-
-**Event handlers can be used to handle and verify user input, user actions, and browser actions:**
-
-•	Things that should be done every time a page loads
-
-•	Things that should be done when the page is closed
-
-•	Action that should be performed when a user clicks a button
-
-•	Content that should be verified when a user inputs data
