@@ -129,6 +129,7 @@ To grow an element, you used to have to use its width and height, or its padding
 ```
 
 7. **Swing**
+
 ```
 @-webkit-keyframes swing
 {
@@ -155,13 +156,16 @@ To grow an element, you used to have to use its width and height, or its padding
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px);
     }
+
 ```
 
 8. **Inset border**
+
 ```
 .border:hover
 {
         box-shadow: inset 0 0 0 25px #53a7ea;
+
 }
 ```
 
